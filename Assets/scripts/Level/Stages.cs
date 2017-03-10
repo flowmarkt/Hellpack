@@ -102,13 +102,13 @@ public class Stages : MonoBehaviour {
 		
 		GameObject newObject;
 		
-		newObject = Instantiate(enemy,new Vector3(2,2,5),Quaternion.identity);
+		newObject = Instantiate(enemy,new Vector3(2,-2,5),Quaternion.identity);
 		newObject.GetComponent<CirculatePattern>().period = 3.5f;
 		newObject.GetComponent<CirculatePattern>().offset = 0f;
 		newObject.GetComponent<EnemyFire>().period = 3.5f;
 		newObject.GetComponent<EnemyFire>().offset = 0f;
 		
-		newObject = Instantiate(enemy,new Vector3(-2,2,5),Quaternion.identity);
+		newObject = Instantiate(enemy,new Vector3(-2,-2,5),Quaternion.identity);
 		newObject.GetComponent<CirculatePattern>().period = 3.5f;
 		newObject.GetComponent<CirculatePattern>().offset = 3.5f;
 		newObject.GetComponent<EnemyFire>().period = 3.5f;
@@ -127,7 +127,7 @@ public class Stages : MonoBehaviour {
 		
 		GameObject newObject;
 		
-		newObject = Instantiate(enemy,new Vector3(2,2,5),Quaternion.identity);
+		newObject = Instantiate(enemy,new Vector3(2,-2,5),Quaternion.identity);
 		newObject.GetComponent<CirculatePattern>().period = 3.5f;
 		newObject.GetComponent<CirculatePattern>().offset = 0f;
 		newObject.GetComponent<EnemyFire>().period = 3.5f;
@@ -144,7 +144,7 @@ public class Stages : MonoBehaviour {
 		
 		GameObject newObject;
 		
-		newObject = Instantiate(enemy,new Vector3(2,2,5),Quaternion.identity);
+		newObject = Instantiate(enemy,new Vector3(2,-2,5),Quaternion.identity);
 		newObject.GetComponent<CirculatePattern>().period = 3.5f;
 		newObject.GetComponent<CirculatePattern>().offset = 0f;
 		newObject.GetComponent<EnemyFire>().period = 3.5f;
@@ -161,7 +161,7 @@ public class Stages : MonoBehaviour {
 		
 		GameObject newObject;
 		
-		newObject = Instantiate(enemy,new Vector3(2,2,5),Quaternion.identity);
+		newObject = Instantiate(enemy,new Vector3(2,-2,5),Quaternion.identity);
 		newObject.GetComponent<CirculatePattern>().period = 3.5f;
 		newObject.GetComponent<CirculatePattern>().offset = 0f;
 		newObject.GetComponent<EnemyFire>().period = 3.5f;
@@ -184,20 +184,20 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(collectible,new Vector3(2,2,15),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,17),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,19),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,21),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,17),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,19),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,21),collectible.transform.rotation);
 		//-------
 		Instantiate(collectible,new Vector3(2,-2,25),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,27),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,29),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,31),collectible.transform.rotation);
 		//--------
-		Instantiate(collectible,new Vector3(-2,2,35),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,37),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,39),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,41),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,35),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,37),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,39),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,41),collectible.transform.rotation);
 		//--------
 		Instantiate(collectible,new Vector3(-2,-2,45),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,47),collectible.transform.rotation);
@@ -214,25 +214,25 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(collectible,new Vector3(2,2,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,15),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,25),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,30),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,30),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(2,2,40),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,40),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,45),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,50),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,55),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,55),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(2,2,65),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,65),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,70),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,75),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,80),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,80),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(2,2,90),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,90),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,95),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,100),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,105),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,105),collectible.transform.rotation);
 		//-------
 		
 		yield return new WaitForSeconds(1);
@@ -244,25 +244,25 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(collectible,new Vector3(0,2,15),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,20),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,25),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,30),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,30),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(0,2,40),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,45),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,40),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,45),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,50),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,55),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,55),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(0,2,35),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,37),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,35),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,37),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,39),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,41),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,41),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(0,2,45),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,47),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,45),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,47),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,49),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,51),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,51),collectible.transform.rotation);
 		//-------
 		
 		yield return new WaitForSeconds(1);
@@ -274,25 +274,25 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(collectible,new Vector3(0,2,15),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,15),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,15),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,15),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,15),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(2,2,20),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,20),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,20),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,20),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(0,2,25),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,0,25),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(0,-2,25),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,0,25),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,25),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(0,-2,25),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,25),collectible.transform.rotation);
 		//-------
-		Instantiate(collectible,new Vector3(2,2,30),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,30),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,30),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,30),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,30),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,30),collectible.transform.rotation);
 		
 		yield return new WaitForSeconds(1);
 		
@@ -303,8 +303,8 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(obstacle,new Vector3(-2,2,15),obstacle.transform.rotation);
-		Instantiate(obstacle,new Vector3(2,2,15),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(-2,-2,15),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(2,-2,15),obstacle.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,20),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,25),collectible.transform.rotation);
@@ -312,13 +312,13 @@ public class Stages : MonoBehaviour {
 		//-------
 		Instantiate(obstacle,new Vector3(-2,-2,30),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(2,-2,30),obstacle.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,35),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,35),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,40),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,40),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,35),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,35),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,40),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,40),collectible.transform.rotation);
 		//-------
-		Instantiate(obstacle,new Vector3(-2,2,45),obstacle.transform.rotation);
-		Instantiate(obstacle,new Vector3(2,2,45),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(-2,-2,45),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(2,-2,45),obstacle.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,50),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,50),collectible.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,55),collectible.transform.rotation);
@@ -326,10 +326,10 @@ public class Stages : MonoBehaviour {
 		//-------
 		Instantiate(obstacle,new Vector3(-2,-2,60),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(2,-2,60),obstacle.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,65),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,65),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,70),collectible.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,70),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,65),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,65),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,70),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,70),collectible.transform.rotation);
 		//-------
 		
 		
@@ -342,25 +342,25 @@ public class Stages : MonoBehaviour {
 	{
 		waveGenerationOngoing = true;
 		
-		Instantiate(obstacle,new Vector3(-2,2,15),obstacle.transform.rotation);
-		Instantiate(obstacle,new Vector3(2,2,15),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(-2,-2,15),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(2,-2,15),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(2,-2,15),obstacle.transform.rotation);
 		Instantiate(collectible,new Vector3(-2,-2,15),collectible.transform.rotation);
 		//-------
-		Instantiate(obstacle,new Vector3(-2,2,30),obstacle.transform.rotation);
-		Instantiate(obstacle,new Vector3(2,2,30),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(-2,-2,30),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(2,-2,30),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(-2,-2,30),obstacle.transform.rotation);
 		Instantiate(collectible,new Vector3(2,-2,30),collectible.transform.rotation);
 		//-------
-		Instantiate(obstacle,new Vector3(-2,2,45),obstacle.transform.rotation);
+		Instantiate(obstacle,new Vector3(-2,-2,45),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(-2,-2,45),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(2,-2,45),obstacle.transform.rotation);
-		Instantiate(collectible,new Vector3(2,2,45),collectible.transform.rotation);
+		Instantiate(collectible,new Vector3(2,-2,45),collectible.transform.rotation);
 		//-------
 		Instantiate(obstacle,new Vector3(-2,-2,60),obstacle.transform.rotation);
-		Instantiate(obstacle,new Vector3(2,2,60),obstacle.transform.rotation);
 		Instantiate(obstacle,new Vector3(2,-2,60),obstacle.transform.rotation);
-		Instantiate(collectible,new Vector3(-2,2,60),collectible.transform.rotation);
+		Instantiate(obstacle,new Vector3(2,-2,60),obstacle.transform.rotation);
+		Instantiate(collectible,new Vector3(-2,-2,60),collectible.transform.rotation);
 		//-------
 		
 		yield return new WaitForSeconds(1);
