@@ -29,7 +29,15 @@ public class Score : MonoBehaviour {
 	static public void IncrementScore()
 	{
 		++score;
-	}
+
+        #region bonus points
+        if(score >= scoreToDisplay + 3)
+        {
+            ++score;
+        }
+        #endregion
+
+    }
 
     static public void EndTune()
     {

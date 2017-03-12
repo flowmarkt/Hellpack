@@ -5,7 +5,7 @@ using UnityEngine;
 public class VehicleController : MonoBehaviour
 {
 
-    private Vector3 targetPosition;
+    private Vector3 targetPosition = new Vector3(0,-2,0);
 
     private GameObject vehicle;
 
@@ -20,16 +20,27 @@ public class VehicleController : MonoBehaviour
 
     void Update()
     {
-        #region GetInput
+        #region GetTarget
         if (Input.GetMouseButton(0))
         {
-            targetPosition = new Vector3(Mathf.Clamp(Input.mousePosition.x/80f,-2f,2f), -2, 0);//TODO resolution független
+            //  input.mouseposition     targetposition
+            //  0                        -2
+            //  Screen.width*0.3         -2
+            //  Screen.width/2           0
+            //  Screen.width*0.7f        2
+            //  Screen.width             2
+
+            float newX = Input.mousePosition.x;
+            newX = (10f*newX)/ Screen.width-5;
+            newX = Mathf.Clamp(newX,-2,2);
+
+            targetPosition = new Vector3(newX,-2,0);
         }
         #endregion
 
         #region MoveVehicle
         float distance = (targetPosition - vehicle.transform.position).magnitude;
-        vehicle.transform.position = Vector3.Lerp(vehicle.transform.position, targetPosition, Time.deltaTime * distance * speed);
+        vehicle.transform.position = Vector3.Lerp(vehicle.transform.position, targetPosition, Time.deltaTime * Mathf.Pow(distance,1.5f) * speed);
         #endregion
     }
 }
